@@ -1,0 +1,11 @@
+$white-color: #ffffff;
+$font-color: #111111;
+$dark-gray-color: #444444;
+
+@mixin detailsCard {
+  padding: 2rem;
+  font-size: 1.05rem;
+  background-color: rgba($color: $white-color, $alpha: 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px $white-color;
+}

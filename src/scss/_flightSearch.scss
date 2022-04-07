@@ -1,0 +1,46 @@
+.search {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  padding: 1rem;
+  color: $white-color;
+  border-radius: 0;
+  box-shadow: 0 0 5px $white-color;
+  background-color: rgba($color: $dark-gray-color, $alpha: 0.3);
+
+  label {
+    font-size: 0.95rem;
+    white-space: pre;
+
+    &.small {
+      font-size: 0.85rem;
+    }
+  }
+
+  [type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+    accent-color: $font-color;
+  }
+
+  code {
+    padding: 0 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #efac03;
+    text-transform: uppercase;
+  }
+}
+
+.search__elem {
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.rmdp-container {
+  display: block !important;
+}
+
+.rmdp-week-day {
+  color: $white-color !important;
+}

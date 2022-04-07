@@ -1,0 +1,82 @@
+.details__header {
+  padding: 0.75rem;
+  border-bottom: 2px solid $white-color;
+
+  a {
+    border-right: 2px solid $white-color;
+
+    svg {
+      margin-right: 1rem;
+      padding: 0.35rem;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      border: 2px solid transparent;
+
+      path {
+        fill: $white-color;
+      }
+    }
+
+    &:hover {
+      svg {
+        border-color: $white-color;
+      }
+    }
+  }
+}
+
+.details__headerName {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $white-color;
+  text-transform: uppercase;
+}
+
+.details__body {
+  margin: 0 -0.75rem;
+}
+
+.details__bodyBox {
+  @include detailsCard;
+  flex: 1 1 50%;
+  margin: 0.75rem;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.details__bodyBoxSpan {
+  min-width: 115px;
+  display: inline-block;
+}
+
+.details__bodyBoxSpanStatus {
+  text-transform: uppercase;
+
+  &.success {
+    color: green;
+  }
+
+  &.failed {
+    color: red;
+  }
+}
+
+.details__gallery {
+  @include detailsCard;
+  margin-top: 1rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.details__galleryImage {
+  background-color: rgba($color: $dark-gray-color, $alpha: 0.6);
+}
+
+.details__description {
+  @include detailsCard;
+  margin-top: 2rem;
+  line-height: 1.4;
+}
